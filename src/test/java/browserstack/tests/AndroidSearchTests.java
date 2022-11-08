@@ -27,9 +27,9 @@ public class AndroidSearchTests extends TestBase {
     void openJavaPageTest() {
         step("Type search", () -> {
             $(AppiumBy.accessibilityId("Search Wikipedia")).click();
-            $(AppiumBy.id("org.wikipedia.alpha:id/search_src_text")).sendKeys("Java (programming language)");
+            $(AppiumBy.id("org.wikipedia.alpha:id/search_src_text")).sendKeys("Selenide");
         });
-        step("Open Java wiki page", () ->
+        step("Open Selenide page", () ->
                 $$(AppiumBy.id("org.wikipedia.alpha:id/view_card_header_image")).first().click());
     }
 
