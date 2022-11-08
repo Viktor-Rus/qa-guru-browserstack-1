@@ -24,7 +24,7 @@ public class AndroidSearchTests extends TestBase {
     }
 
     @Test
-    void openJavaPageTest() {
+    void openSelenideTest() {
         step("Type search", () -> {
             $(AppiumBy.accessibilityId("Search Wikipedia")).click();
             $(AppiumBy.id("org.wikipedia.alpha:id/search_src_text")).sendKeys("Selenide");
